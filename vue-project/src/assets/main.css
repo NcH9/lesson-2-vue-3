@@ -1,0 +1,59 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+button {
+  border-radius: 15px;
+  border: solid 1px rgb(115, 105, 95);
+  background-color: rgb(178, 252, 227);
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bubble {
+  background-color: rgb(74, 74, 74);
+  border-radius: 15px;
+  border: none;
+  margin: 15px;
+  padding: 10px;
+}
+.grid {
+  display: grid;
+}
+.error {
+  color: rgb(255, 95, 95);
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
